@@ -2,8 +2,10 @@
   "name": "relay_agent",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "relay.js",
   "scripts": {
+    "start": "node relay.js",
+    "start:supervised": "node supervisor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +16,8 @@
     "dotenv": "^17.3.1",
     "socket.io-client": "^4.8.3",
     "wake_on_lan": "^1.0.0"
+  },
+  "devDependencies": {
+    "socket.io": "^4.8.3"
   }
 }
